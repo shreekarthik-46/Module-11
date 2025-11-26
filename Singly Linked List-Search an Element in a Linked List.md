@@ -1,16 +1,16 @@
-# # 🔍 Singly Linked List-To Search an Element in a Linked List
+# #  Singly Linked List-To Search an Element in a Linked List
 
 This project contains a simple implementation of a **singly linked list** in Python, allowing insertion and searching of elements.
 
 ---
 
-## 🎯 Aim
+##  Aim
 
 To write a Python program to search for a given element in a singly linked list using object-oriented programming principles.
 
 ---
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Define a Node class** with `data` and `next` attributes.
 2. **Define a LinkedList class** with:
@@ -25,9 +25,48 @@ To write a Python program to search for a given element in a singly linked list 
 
 ---
 
-## 💻 Program
-Add Code Here
+##  Program
+```
+class Node:
+    def _init_(self, data):
+        self.data = data
+        self.next = None
+ 
+class LinkedList:
+    def _init_(self):
+        self.head = None
+ 
+    def push(self, new_data):
+        new_node = Node(new_data)
+        new_node.next = self.head
+        self.head = new_node
+      def search(self, x):
+        current = self.head
+        while current != None:
+            if current.data == x:
+                return True
+             
+            current = current.next
+        return False
+ 
+llist = LinkedList()
+ 
+llist.push(10);
+llist.push(30);
+llist.push(11);
+llist.push(21);
+llist.push(14);
+
+data = int(input())
+if llist.search(data):
+    print("Yes")
+else:
+    print("No")
+```
+
 ## Sample Output
 
-## Result
+![sll-search](https://github.com/user-attachments/assets/a5ec22f7-2b9c-465d-a70e-69dcdbda737c)
 
+## Result
+Thus a Python program to search for a given element in a singly linked list using object-oriented programming principles is created.
