@@ -1,16 +1,16 @@
-# 📝 Singly Linked List: Add Element at the Start
+#  Singly Linked List: Add Element at the Start
 
 This Python program demonstrates the implementation of a **Singly Linked List** where a new element can be added at the **start** of the list.
 
 ---
 
-## 🎯 Aim
+##  Aim
 
 To write a Python program that adds a **new element** at the **start** of a singly linked list. The program implements a `push_front` method that inserts an element at the front of the list, followed by a method to print the list.
 
 ---
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Step 1:** Define a class `Node` with:
    - `data` to store the node's value.
@@ -34,8 +34,45 @@ To write a Python program that adds a **new element** at the **start** of a sing
 ---
 
 ## Program
-Add Code Here
+```
+class Node:
+  def _init_(self, data):
+    self.data = data
+    self.next = None
+
+class LinkedList:
+  def _init_(self):
+    self.head = None
+
+  def push_front(self, newElement):
+    newNode = Node(newElement)
+    newNode.next = self.head 
+    self.head = newNode   
+
+  def PrintList(self):
+       temp = self.head
+    if(temp != None):
+      print("The list contains:", end=" ")
+      while (temp != None):
+        print(temp.data, end=" ")
+        temp = temp.next
+      print()
+    else:
+      print("The list is empty.")
+
+MyList = LinkedList()
+
+MyList.push_front(10)
+MyList.push_front(20)
+MyList.push_front(30)
+MyList.PrintList()
+```
+
 ## Sample Output
 
+![last one](https://github.com/user-attachments/assets/995d64ac-19f3-461e-a9cf-0dd5c2a710d6)
+
 ## Result
+Thus a Python program that adds a **new element** at the **start** of a singly linked list. The program implements a `push_front` method that inserts an element at the front of the list, followed by a method to print the list is created.
+
 
