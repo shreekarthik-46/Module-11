@@ -1,8 +1,7 @@
-#  Doubly Linked List: Insert Elements at the End of a Doubly Linked List
+# 11)a) Doubly Linked List: Insert Elements at the End of a Doubly Linked List
 
 This Python program demonstrates the creation and manipulation of a **Doubly Linked List** where elements can be inserted at the **end** of the list. The program also provides a method to traverse the list and display the elements.
 
----
 
 ##  Aim
 
@@ -11,7 +10,7 @@ To write a Python program that:
 - Allows insertion of elements at the end of the list.
 - Provides functionality to traverse the list and display its elements.
 
----
+
 
 ## Algorithm
 
